@@ -1,0 +1,84 @@
+<div class="top">
+
+
+</div>
+
+<div class="bottom">
+
+    <form [formGroup]="billingManageMethodService.formGroup">
+
+        <div class="row">
+
+            <clr-input-container>
+
+                <label>Full Name</label>
+
+                <input clrInput
+                       placeholder="John Doe"
+                       formControlName="name">
+
+                <clr-control-helper>Enter the name as it appears on the card.</clr-control-helper>
+                <clr-control-error>This field is required!</clr-control-error>
+
+            </clr-input-container>
+
+        </div>
+
+        <div class="row">
+
+            <clr-input-container>
+
+                <label>Credit Card Number</label>
+
+                <input clrInput
+                       placeholder="1234 4567 8901 2345"
+                       maxlength="19"
+                       formControlName="number">
+
+                <clr-control-helper>VISA, MasterCard, Discover, and AMEX accepted.</clr-control-helper>
+                <clr-control-error>This field is required!</clr-control-error>
+
+            </clr-input-container>
+
+        </div>
+
+        <div class="row">
+
+            <clr-input-container>
+
+                <label>Expiration</label>
+
+                <input clrInput
+                       placeholder="01/29"
+                       maxlength="5"
+                       formControlName="number"
+                       style="width: 50px;"
+                       required>
+
+                <clr-control-error>This field is required!</clr-control-error>
+
+            </clr-input-container>
+
+            <clr-input-container>
+
+                <label>Postal Code</label>
+
+                <input clrInput
+                       placeholder="10005-0000"
+                       style="width: 95px"
+                       formControlName="number">
+
+                <clr-control-helper>Postal/zip code on the billing address.</clr-control-helper>
+                <clr-control-error>This field is required!</clr-control-error>
+
+            </clr-input-container>
+
+        </div>
+
+        <div class="row">
+
+        </div>
+
+    </form>
+
+</div>

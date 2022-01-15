@@ -1,0 +1,32 @@
+:host {
+
+    .top {
+
+    }
+
+    .bottom {
+
+        clr-input-container {
+
+            input {
+
+                width: 100%;
+
+            }
+
+        }
+
+        .row {
+
+            display: flex;
+
+            clr-input-container {
+
+                flex: 1;
+
+            }
+        }
+
+    }
+
+}

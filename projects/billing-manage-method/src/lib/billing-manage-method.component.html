@@ -1,0 +1,54 @@
+<clr-modal [clrModalOpen]="true"
+           [clrModalClosable]="false"
+           class="ngstudio-billing-manage-method"
+           clrModalSize="sm">
+
+    <h3 class="modal-title">
+
+        Add Credit Card
+
+    </h3>
+
+    <div class="modal-body">
+
+        <div class="top">
+
+
+            <div class="icon">
+
+
+            </div>
+
+            <div class="title">
+
+                Enter your card information using our secure form below.
+
+            </div>
+
+            <lib-credit-card-form></lib-credit-card-form>
+
+        </div>
+
+    </div>
+
+    <div class="modal-footer">
+
+        <div class="left">
+
+            <i class="icon-shield-check tooltip tooltip-bottom-right">
+
+                <span class="tooltip-content">We do not store credit card information. Click here to learn more..</span>
+
+            </i>
+
+        </div>
+
+        <div class="right">
+
+            <button type="button" class="btn btn-outline" (click)="onCancelClick()">CANCEL</button>
+            <button type="button" class="btn btn-primary" (click)="onNextClick()">SAVE</button>
+
+        </div>
+    </div>
+
+</clr-modal>

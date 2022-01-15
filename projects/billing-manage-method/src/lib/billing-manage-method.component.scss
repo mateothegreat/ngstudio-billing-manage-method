@@ -1,0 +1,33 @@
+@import '../theme';
+
+.modal-body-wrapper {
+
+    height: 100%;
+
+}
+
+.ngstudio-billing-manage-method {
+
+    .modal-footer {
+
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        i {
+
+            font-size: 30px;
+            color: mediumpurple;
+            cursor: pointer;
+
+            &:hover {
+
+                color: green;
+
+            }
+
+        }
+
+    }
+
+}
